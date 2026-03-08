@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       namespace :my do
         resource :restaurant, only: [:show, :create, :update]
         resources :photos, only: [:create, :destroy]
+        resources :specials, only: [:create, :destroy]
       end
     end
   end
